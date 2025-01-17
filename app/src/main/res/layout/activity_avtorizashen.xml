@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grad"
+    tools:context=".Avtorizashen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:text="Авторизация"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/avtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Введите электронную почту"
+            android:background="@drawable/rounded_edit_text"
+            android:textSize="25dp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/avtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Введите пароль"
+            android:background="@drawable/rounded_edit_text"
+            android:textSize="25dp"
+            android:inputType="numberPassword" />
+
+        <Button
+            android:id="@+id/avtButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="25dp"
+            android:background="@drawable/radius_button"
+            app:backgroundTint="@null"
+            android:text="Авторизоваться" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:text="Не зарегистрированы?"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:layout_marginVertical="10dp"
+            android:text="Пройдите регистрацию"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/radius_button2"
+            app:backgroundTint="@null"/>
+    </LinearLayout>
+</LinearLayout>

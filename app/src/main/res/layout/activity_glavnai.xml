@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grad"
+    tools:context=".Glavnai">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonExite"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginHorizontal="50dp"
+                android:background="@drawable/baseline_arrow_back_24"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/buttonProfile"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginHorizontal="50dp"
+                android:background="@drawable/baseline_account_circle_24"
+                app:backgroundTint="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Для чего:"
+            android:textColor="@color/green"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Описание:"
+            android:textColor="@color/green"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edit_text"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonCreateNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="25dp"
+            android:background="@drawable/radius_button"
+            app:backgroundTint="@null"
+            android:text="Сделать запись" />
+    </LinearLayout>
+</LinearLayout>
