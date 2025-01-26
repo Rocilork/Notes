@@ -83,6 +83,15 @@ class Glavnai : AppCompatActivity() {
         }
 
         buttonExite.setOnClickListener {
+            //Выход из сессии
+            try{
+                lifecycleScope.launch {
+                    SB.getClient().auth.signOut()
+                }
+            }catch (e: Exception){
+                Log.e("!!!", e.message.toString())
+            }
+
             val exit = Intent(this, Avtorizashen::class.java)
             startActivity(exit)
         }
